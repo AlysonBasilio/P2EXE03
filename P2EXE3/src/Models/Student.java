@@ -1,6 +1,6 @@
-package exe03;
+package Models;
 
-public class Student {
+public class Student extends Model{
 	private String rollNo;
 	private String name;
 

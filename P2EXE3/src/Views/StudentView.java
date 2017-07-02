@@ -1,6 +1,6 @@
-package exe03;
+package Views;
 
-public class StudentView {
+public class StudentView extends View{
 	public void printStudentDetails(String studentName, String studentRollNo) {
 		System.out.println("Student: ");
 		System.out.println("Name: " + studentName);

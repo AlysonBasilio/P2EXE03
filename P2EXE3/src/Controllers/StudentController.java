@@ -1,6 +1,9 @@
-package exe03;
+package Controllers;
 
-public class StudentController {
+import Models.Student;
+import Views.StudentView;
+
+public class StudentController extends Controller {
 	private Student model;
 	private StudentView view;
 
