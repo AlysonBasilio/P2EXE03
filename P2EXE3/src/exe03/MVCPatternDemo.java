@@ -59,7 +59,7 @@ public class MVCPatternDemo {
 		Professor pModel = retriveProfessorFromDatabase();
 		// Create a view : to write student details on console
 		ProfessorView pView = new ProfessorView();
-		controller = cF.buildController(sModel, sView);
+		controller = cF.buildController(pModel, pView);
 		
 		methods = controller.getClass().getDeclaredMethods();
 		

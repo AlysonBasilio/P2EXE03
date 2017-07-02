@@ -1,15 +1,18 @@
 package Controllers;
 
+import Models.Model;
 import Models.Student;
 import Views.StudentView;
+import Views.View;
 
 public class StudentController extends Controller {
 	private Student model;
 	private StudentView view;
 
-	public StudentController(Student model, StudentView view) {
-		this.model = model;
-		this.view = view;
+	public StudentController(Model model, View view) {
+		super(model,view);
+		this.model = (Student) model;
+		this.view = (StudentView) view;
 	}
 
 	public void setStudentName(String name) {
